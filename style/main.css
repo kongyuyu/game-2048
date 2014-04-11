@@ -316,6 +316,9 @@ hr {
   .tile.tile-2 .tile-inner {
     background: url('../tile-sets/xixi/2.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+    @media screen and (max-width: 520px) {
+      .tile.tile-2 .tile-inner {
+        background-size:57px 57px; } }
   .tile.tile-4 .tile-inner {
     background: url('../tile-sets/xixi/4.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
@@ -545,9 +548,14 @@ hr {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
+
     .game-container .game-message {
-      display: none;
       position: absolute;
+    }
+
+    .token-container .game-container .game-message {
+      display: none;
+
       top: 0;
       right: 0;
       bottom: 0;
@@ -561,16 +569,16 @@ hr {
       -webkit-animation-fill-mode: both;
       -moz-animation-fill-mode: both;
       animation-fill-mode: both; }
-      .game-container .game-message p {
+      .token-container .game-container .game-message p {
         font-size: 60px;
         font-weight: bold;
         height: 60px;
         line-height: 60px;
         margin-top: 222px; }
-      .game-container .game-message .lower {
+      .token-container .game-container .game-message .lower {
         display: block;
         margin-top: 59px; }
-      .game-container .game-message a {
+      .token-container .game-container .game-message a {
         display: inline-block;
         background: #8f7a66;
         border-radius: 3px;
@@ -580,14 +588,14 @@ hr {
         height: 40px;
         line-height: 42px;
         margin-left: 9px; }
-        .game-container .game-message a.keep-playing-button {
+        .token-container .game-container .game-message a.keep-playing-button {
           display: none; }
-      .game-container .game-message.game-won {
+      .token-container .game-container .game-message.game-won {
         background: rgba(237, 194, 46, 0.5);
         color: #f9f6f2; }
-        .game-container .game-message.game-won a.keep-playing-button {
+        .token-container .game-container .game-message.game-won a.keep-playing-button {
           display: inline-block; }
-      .game-container .game-message.game-won, .game-container .game-message.game-over {
+      .token-container .game-container .game-message.game-won, .game-container .game-message.game-over {
         display: block; }
 
   .grid-container {
